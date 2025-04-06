@@ -49,15 +49,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <style>
-        body { background-color: #f4f8fc; }
+        body { 
+            background: url('background.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         .login-container {
-            background: white;
+            background: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             max-width: 400px;
-            margin: auto;
-            margin-top: 60px;
             text-align: center;
         }
         .form-label { font-weight: bold; }
@@ -65,9 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .btn-primary:hover { background-color: #0056b3; }
         .input-group-text { background: #e9ecef; }
         .forgot-password { margin-top: 10px; }
-        .password-toggle {
-            cursor: pointer;
-        }
+        .password-toggle { cursor: pointer; }
     </style>
 </head>
 <body>
